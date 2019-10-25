@@ -1,0 +1,28 @@
+body {
+    margin: 0%;
+}
+header {
+    background-color: #303030;
+}
+
+.nav-wrapper {
+    width: 61%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu li{
+    list-style: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
