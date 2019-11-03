@@ -12,20 +12,20 @@
 </head>
 <body>
     <header>
-        <div class="header-wrapper">
-            <div class="logo">
-                <img class="logo"src="media/logo.png" alt="logo">
-            </div>
-            <nav>
-                <ul class="main-menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="">Portfolios</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><img class="logo"src="media/logo.png" alt="logo"></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Portfolios</a></li>
+                <li class="item"><a href="#">Team</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="item button"><a href="#">Login</a></li>
+                <li class="item button secondary"><a href="#">Sign Up</a></li>
+                <li class="toggle"><i class="fa fa-bars"></i></span></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="main-slide">
@@ -123,8 +123,7 @@
             <div class="portfolio-about">
                 <h1>Some recent projects</h1>
                 <div class="separator"></div>
-                <p>Nam liber tempor cum soluta nobis eleifend option</p>
-                <p>congue nihil imperdiet doming id quod mazim</p>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim</p>
             </div>
             <div class="portfolio-container">
                 <img src="media/portfolio_1.jpg" alt="">
@@ -197,19 +196,59 @@
                 <div class="separator"></div>
                 <p>Nam liber tempor cum soluta nobis eleifend option</p>                       
                 <p>congue nihil imperdiet doming id quod mazim </p>
+                <div class="blog-posts">
+                    <img id="blog-item-1" src="media/camera.jpg" alt="Camera">
+                    <div id="blog-item-2" class="blog-article content-left">
+                        <p>10 April 2014</p>
+                        <h4>Typi non habent claritatem insitam</h4>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla 
+                        facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                    <div id="blog-item-3" class="blog-article content-right">
+                        <p>20 March 2014</p>
+                        <h4>Typi non habent claritatem insitam</h4>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla 
+                        facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                    <img id="blog-item-4"src="media/camera.jpg" alt="Camera">
+                    <img id="blog-item-5" src="media/camera.jpg" alt="Camera">
+                    <div id="blog-item-6" class="blog-article content-left">
+                        <p>10 January 2014</p>
+                        <h4>Typi non habent claritatem insitam</h4>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                        esse molestie consequat, vel illum dolore eu feugiat nulla 
+                        facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</p>
+                    </div>
+                </div>
+                <div class="all-posts">
+                    <svg width="92px" height="92px">
+                        <circle cx="46" cy="46" r="38" 
+                        style="fill:#6b5e56;stroke:#d2d2d2;stroke-width:8" />
+                        <text x="50%" y="55%" text-anchor="middle">All Post</text>
+                    </svg>
+                </div>
             </div>
         </section>
         <section class="contacts">
             <div class="contact-wrapper">
                 <h1>Contact</h1>
                 <form action="#">
-                    <input type="text" name="name" value="">
-                    <p>Name:</p>                  
-                    <input type="email" name="email" value="">
-                    <p>Email:</p>
-                    <input type="text" name="message" value="">
-                    <p>Message:</p>
-                    <p type="submit">Submit</p>
+                    <div class="top-row">
+                        <div class="field">
+                            <input id="name" type="text" name="name" value=""/>
+                            <label for="name">Name*</label>
+                        </div>
+                        <div class="field">
+                            <input id="message" type="text" name="message" value=""/>
+                            <label for="email">Email*</label>
+                        </div>
+
+                    </div>   
+                    <label for="message"><input id="message" type="text" name="message" value=""/>Message...</label>
+                    <div class="contact-separator"></div>
+                    <button id="btn-submit" type="submit">Submit</button>
                 </form> 
             </div>
         </section>
