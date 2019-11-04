@@ -234,23 +234,20 @@
         <section class="contacts">
             <div class="contact-wrapper">
                 <h1>Contact</h1>
-                <form action="#">
-                    <div class="top-row">
-                        <div class="field">
-                            <input id="name" type="text" name="name" value=""/>
-                            <label for="name">Name*</label>
-                        </div>
-                        <div class="field">
-                            <input id="message" type="text" name="message" value=""/>
-                            <label for="email">Email*</label>
-                        </div>
-
-                    </div>   
-                    <label for="message"><input id="message" type="text" name="message" value=""/>Message...</label>
+                <form action="#" name="contact_form">
+                    <label for="first_name">Name:</label>
+                    <input name="first_name" type="text" required placeholder="Name*"/>               
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" required placeholder="Email*"/>                    
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" cols="20" rows="10" placeholder="Message ..." required> </textarea>
                     <div class="contact-separator"></div>
-                    <button id="btn-submit" type="submit">Submit</button>
-                </form> 
+                    <div class="btn-submit">
+                        <button id="btn-submit" type="submit">Submit</button>
+                    </div>                    
+                </form>
             </div>
+
         </section>
     </main>
     <footer>
